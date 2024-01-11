@@ -11,10 +11,6 @@
  * 輸入: { firstName: 'John', lastName: 'Doe' }
  * 輸出: 'John Doe'
  */
-type nametype = {
-    firstName: string;
-    lastName: string
-}
-export function getFullName(user:nametype ): string {
-    return `${user.firstName} ${user.lastName}`
+export function getFullName(user: /* 你的用戶介面 */): string {
+    // 在此實現函式
 }

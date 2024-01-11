@@ -8,10 +8,6 @@
  * 輸出: [[2, 4], [6, 8], [10, 12]]
  */
 
-type numArry = [number,number]
-
-export function processMultiArray(arr: numArry[]) {
-    return arr.map(item=>{
-        return [ item[0] * 2, item[1] * 2 ]
-    })
+export function processMultiArray(arr) {
+    // 在此實現函式
 }
