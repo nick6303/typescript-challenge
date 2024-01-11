@@ -19,5 +19,10 @@ interface UrlParts {
 }
 
 export function parseUrl(url: string): UrlParts {
-   // 請在此處寫下你的程式碼
+  const test = new URL(url)
+  return {
+    protocol: test.protocol,
+    hostname: test.hostname,
+    path: test.pathname
+  }
 }
