@@ -22,7 +22,7 @@ export function subtract(a: number, b: number): number {
  * @param b - 第二個數字
  */
 export function multiply(a: number, b: number): number {
-    return a * b
+    return a*b
 }
 
 /**
@@ -31,7 +31,7 @@ export function multiply(a: number, b: number): number {
  * @param b - 第二個數字
  */
 export function divide(a: number, b: number): number {
-    return a / b
+    return a/b
 }
 
 /**

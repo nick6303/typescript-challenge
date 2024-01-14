@@ -11,12 +11,13 @@
  * 輸入: { brand: 'Toyota', model: 'Corolla', year: 2020 }
  * 輸出: 'Toyota Corolla (2020)'
  */
- type vehicleType = {
+type vehicleType = {
     brand: string;
     model: string;
     year: number
 } 
 
 export function vehicleInfo(vehicle: vehicleType): string {
-    return `${vehicle.brand} ${vehicle.model} ${vehicle.year}`
+    const val = `${vehicle.brand} ${vehicle.model} (${vehicle.year})`
+    return val
 }

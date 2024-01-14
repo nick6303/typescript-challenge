@@ -6,9 +6,7 @@
  */
 
 // 請在下方寫下你的程式碼
-export function fetchData (url:string){
-  return new Promise(async(resolve)=>{
-    const res = await fetch(url)
-    resolve(res)
-  })
+export async function fetchData (url:string){
+  const res = await fetch(url)
+  return res
 }
