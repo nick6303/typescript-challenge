@@ -12,15 +12,14 @@
  * @param obj - 一個物件
  * @returns - 回傳一個物件，該物件有 get 和 set 兩個方法
  */
-export function createObjectAccessor<T>(obj: object) {
+export function createObjectAccessor<T>(obj:object) {
     // 請在此處寫下你的程式碼
-    let data = obj
+    const data = obj
     function get (key:string):T{
-        const temp = data[key]
-        return temp
+        return data[key]
     }
 
-    function set (key: string, val:T) {
+    function set (key: T, val:T) {
         data[key] = val
     }
     return { get,set }
