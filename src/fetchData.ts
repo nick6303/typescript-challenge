@@ -6,7 +6,13 @@
  */
 
 // 請在下方寫下你的程式碼
-export async function fetchData (url:string){
-  const res = await fetch(url)
-  return res
+export function fetchData (url:string){
+  return new Promise(async(reslove,reject)=>{
+    try {
+      const res = await fetch(url,{})
+      reslove(res.json())
+    } catch (error) {
+      reject(error)
+    }
+  })
 }

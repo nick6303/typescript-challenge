@@ -22,7 +22,7 @@ export function subtract(a: number, b: number): number {
  * @param b - 第二個數字
  */
 export function multiply(a: number, b: number): number {
-    return a*b
+    return a * b
 }
 
 /**
@@ -30,8 +30,11 @@ export function multiply(a: number, b: number): number {
  * @param a - 第一個數字
  * @param b - 第二個數字
  */
-export function divide(a: number, b: number): number {
-    return a/b
+export function divide(a: number, b: number): number| string {
+    if( b === 0 ){
+        throw Error('Cannot divide by zero')
+    }
+    return a / b
 }
 
 /**
