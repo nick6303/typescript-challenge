@@ -37,6 +37,8 @@ export function divide(a: number, b: number): number| string {
     return a / b
 }
 
+
+
 /**
  * 實現加法函數，結果不能超過 100。
  * 
